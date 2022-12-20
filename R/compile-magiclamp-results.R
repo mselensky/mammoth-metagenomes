@@ -14,25 +14,25 @@ combined.output.path = file.path(magiclamp.in, "magiclamp-results-combined.csv")
 
 # each 'genie' was ran separately...
 # options are 'mags' or 'assemblies'
-
 compile.genie.data <- function(run.type) {
   magiclamp.in.mags = file.path(magiclamp.in, run.type)
   mag.samples = list()
   hm.mags = list()
   for (i in list.files(magiclamp.in.mags)) {
-    path = file.path(magiclamp.in.mags, i)
-    mag.samples[[i]] = list.files(path)
-    
-    data.in = list()
-    for (x in mag.samples[[i]]) {
-      data.in[[x]] <- list.files(file.path(magiclamp.in.mags, i, x))
-      hm.file = grepl("heatmap", data.in[[x]])
-      y = data.in[[x]][hm.file == TRUE]
-      suppressMessages(
-        hm.mags[[x]][[i]] <- read_csv(file.path(magiclamp.in.mags, i, x, y), col_types = cols())
-      )
+    if (i != "lithogenie") {
+      path = file.path(magiclamp.in.mags, i)
+      mag.samples[[i]] = list.files(path)
+      
+      data.in = list()
+      for (x in mag.samples[[i]]) {
+        data.in[[x]] <- list.files(file.path(magiclamp.in.mags, i, x))
+        hm.file = grepl("heatmap", data.in[[x]])
+        y = data.in[[x]][hm.file == TRUE]
+        suppressMessages(
+          hm.mags[[x]][[i]] <- read_csv(file.path(magiclamp.in.mags, i, x, y), col_types = cols())
+        )
+      }
     }
-    
   }
   
   hm.mags.formatted <- list()
@@ -65,6 +65,10 @@ compile.genie.data <- function(run.type) {
                         count = value)
       }
       
+      if(nrow(hm.mags.formatted[[x]][[i]]) == 0) {
+        hm.mags.formatted[[x]][[i]] <- NULL
+      }
+      
     }
     
     hm.mags.formatted[[x]] <- Reduce(bind_rows, hm.mags.formatted[[x]])
@@ -73,9 +77,65 @@ compile.genie.data <- function(run.type) {
   
   Reduce(bind_rows, hm.mags.formatted)
 }
+compile.lithogenie <- function(run.type) {
+  magiclamp.in.mags = file.path(magiclamp.in, run.type)
+  mag.samples = list()
+  hm.mags = list()
+  hm.mags.red = list()
+  dat.out = list()
+  # enter the for-loop hell
+  for (i in list.files(magiclamp.in.mags)) {
+    if (i %in% c("lithogenie", "LithoGenie")) {
+      path = file.path(magiclamp.in.mags, i)
+      mag.samples[[i]] = list.files(path)
+      
+      data.in = list()
+      for (x in mag.samples[[i]]) {
+        data.in[[x]] <- list.files(file.path(magiclamp.in.mags, i, x))
+        hm.file = grepl("heatmap", data.in[[x]])
+        y = data.in[[x]][hm.file == TRUE]
+        for (z in y) {
+          suppressMessages(
+            hm.mags[[x]][[i]][[z]] <- read_csv(file.path(magiclamp.in.mags, i, x, z), col_types = cols()) %>%
+              pivot_longer(2:ncol(.)) %>%
+              filter(!is.na(value)) %>%
+              dplyr::mutate(lithogenie.hm = z) %>%
+              dplyr::rename(genie.hmm = X,
+                            bin = name,
+                            count = value)
+          )
+          if(nrow(hm.mags[[x]][[i]][[z]]) == 0) {
+            hm.mags[[x]][[i]][[z]] <- NULL
+          }
+        }
+        hm.mags.red[[x]] <- Reduce(bind_rows, hm.mags[[x]][[i]]) 
+      }
+      
+      dat.out[[i]] <- Reduce(bind_rows, hm.mags.red) %>%
+        dplyr::mutate(lithogenie.hm = str_remove_all(lithogenie.hm, "lithogenie.")) %>%
+        dplyr::mutate(lithogenie.hm = str_remove_all(lithogenie.hm, ".heatmap.csv")) %>%
+        dplyr::mutate(`sample-id` = str_remove_all(string = bin, pattern = regex("_S[0-9].scaffolds+$")),
+                      `sample-id` = str_remove_all(string = `sample-id`, pattern = regex("_S[0-9].*.fasta+$")))
+      
+    }
+  }
+  
+  dat.out
+  
+}
 
 assemblies <- compile.genie.data("assemblies")
 mags <- compile.genie.data("mags")
+litho.assemblies <- compile.lithogenie("assemblies")
+litho.mags <- compile.lithogenie("mags")
+
+names(assemblies)
+names(litho.assemblies$lithogenie)
+
+assemblies %>%
+  dplyr::mutate(`sample-id` = str_remove_all(string = bin, pattern = regex("_S[0-9].scaffolds+$")),
+                `sample-id` = str_remove_all(string = `sample-id`, pattern = regex("_S[0-9].[0-9]+$")))
+
 
 write_csv(assemblies, file.path(magiclamp.in, "genies-assemblies.csv"))
 write_csv(mags, file.path(magiclamp.in, "genies-mags.csv"))

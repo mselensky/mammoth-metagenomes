@@ -7,7 +7,7 @@
 #SBATCH --mem-per-cpu=4GB
 #SBATCH --mail-user=mselensky@u.northwestern.edu
 #SBATCH --mail-type=END
-#SBATCH --job-name="genies-mammoth-assemblies"
+#SBATCH --job-name="genies-mammoth-mags-normalized"
 #SBATCH --output=/home/mjs9560/scripts/slurm-out/mammoth-metagenomes/%x_%A_%a.out
 
 # activate MagicLamp conda environment and add executable to $PATH
@@ -22,8 +22,8 @@ genies=(FeGenie WspGenie GasGenie MnGenie RosGenie MagnetoGenie Lucifer)
 # both are children of $WORK_DR
 cd /projects/p30996/mammoth/metagenomes
 export WORK_DR=`pwd`
-export BIN_DR=$WORK_DR/assembled-spades
-export OUT_DR=$WORK_DR/MagicLamp/assemblies/${genies[$SLURM_ARRAY_TASK_ID]}
+export BIN_DR=$WORK_DR/metabat2-mammoth-scaffolds-c_2000
+export OUT_DR=$WORK_DR/MagicLamp/mags/${genies[$SLURM_ARRAY_TASK_ID]}-norm
 
 # ensure output parent directory exists
 mkdir -p $OUT_DR
@@ -35,7 +35,7 @@ cd $BIN_DR
 for dir in */; do
 
 	dir=$(basename $dir)
-	INPUT_GENOMES=${BIN_DR}/${dir}/tmp-bin
+	INPUT_GENOMES=${BIN_DR}/${dir}
 
 	# remove any subfolder with data from previous runs (needs a clean output folder)
 	# and make clean subfolder for output in OUT_DR 
@@ -44,7 +44,6 @@ for dir in */; do
 	echo "[`date`] Executing 'MagicLamp.py ${genies[$SLURM_ARRAY_TASK_ID]}' for ' $dir '..."     
 
 	SECONDS=0 # this line monitors how long the fastas each subfolder took to annotate
-	# using .faa files from prodigal in METABOLIC pipeline
 	MagicLamp.py `echo ${genies[$SLURM_ARRAY_TASK_ID]}` \
 	-bin_dir $INPUT_GENOMES \
 	-bin_ext faa \

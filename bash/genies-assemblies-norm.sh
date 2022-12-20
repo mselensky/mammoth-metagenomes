@@ -7,7 +7,7 @@
 #SBATCH --mem-per-cpu=4GB
 #SBATCH --mail-user=mselensky@u.northwestern.edu
 #SBATCH --mail-type=END
-#SBATCH --job-name="genies-mammoth-assemblies"
+#SBATCH --job-name="genies-mammoth-assemblies-normalized"
 #SBATCH --output=/home/mjs9560/scripts/slurm-out/mammoth-metagenomes/%x_%A_%a.out
 
 # activate MagicLamp conda environment and add executable to $PATH
@@ -23,7 +23,7 @@ genies=(FeGenie WspGenie GasGenie MnGenie RosGenie MagnetoGenie Lucifer)
 cd /projects/p30996/mammoth/metagenomes
 export WORK_DR=`pwd`
 export BIN_DR=$WORK_DR/assembled-spades
-export OUT_DR=$WORK_DR/MagicLamp/assemblies/${genies[$SLURM_ARRAY_TASK_ID]}
+export OUT_DR=$WORK_DR/MagicLamp/assemblies/${genies[$SLURM_ARRAY_TASK_ID]}-norm
 
 # ensure output parent directory exists
 mkdir -p $OUT_DR
