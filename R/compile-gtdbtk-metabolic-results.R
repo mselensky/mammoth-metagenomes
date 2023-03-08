@@ -2,7 +2,7 @@ library(tidyverse)
 
 # input METABOLIC-C directory for Mammoth MAGs
 work.dir = "/projects/p30996/mammoth/metagenomes"
-metabolic.in = file.path(work.dir, "metabolic_c-mags-c_2000")
+metabolic.in = file.path(work.dir, "metabolic_c-refined-mags")
 metadata.path = file.path(work.dir, "data", "MC_field_data.csv")
 sample.key.path = file.path(work.dir, "data", "MC_sample_key.csv")
 MW.score.path = file.path(work.dir, "data", "MW-score_key.txt")
@@ -42,7 +42,7 @@ for (i in mag.samples) {
         dplyr::mutate(`sample-id` = str_remove_all(string = i, pattern = regex("_S[0-9]+$")), 
                       across(.cols = everything(), .fns = as.character))
     } else {
-      message("Sample ", i, " lacks archaeal genomes; skipping import.")
+      message("Sample ", i, " lacks archaeal genomes; skipping archaeal data import.")
     }
     
   } else {

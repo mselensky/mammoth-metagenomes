@@ -6,7 +6,7 @@
 #SBATCH -n 4
 #SBATCH --array=0-20
 #SBATCH --mem-per-cpu=20G
-#SBATCH --job-name=bin_refinement-mammoth
+#SBATCH --job-name=bin_refinement-mammoth-50compl-50contam
 #SBATCH --mail-user=mselensky@u.northwestern.edu
 #SBATCH --mail-type=END
 #SBATCH --output=/home/mjs9560/scripts/slurm-out/mammoth-metagenomes/%A_%a-%x.out
@@ -21,7 +21,7 @@ metagenome=${input_args[$SLURM_ARRAY_TASK_ID]}
 # define parent genome directory and trimmed reads folder
 parent_dir=/projects/p30996/mammoth/metagenomes
 initial_bins=${parent_dir}/metaWRAP-initial-bins/${metagenome}
-output_dir=${parent_dir}/metaWRAP-refined-bins/${metagenome}
+output_dir=${parent_dir}/metaWRAP-refined-bins-50compl-50contam/${metagenome}
 ####             ####
 module purge all
 #module load metawrap/1.3.2
@@ -40,7 +40,7 @@ metawrap bin_refinement \
   -A ${initial_bins}/metabat2_bins/ \
   -B ${initial_bins}/maxbin2_bins/ \
   -C ${initial_bins}/concoct_bins/ \
-  -c 50 -x 10
+  -c 50 -x 50
 
 # back up results to scratch space
 backup_dir=/scratch/$USER/refined_bins/${metagenome}

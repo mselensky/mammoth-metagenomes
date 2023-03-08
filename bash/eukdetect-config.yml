@@ -1,0 +1,59 @@
+#Default config file for eukdetect. Copy and edit for analysis
+
+#matt: activate eukdetect conda environment
+conda: "eukdetect"
+
+#Directory where EukDetect output should be written
+output_dir: "/projects/p30996/mammoth/metagenomes/eukdetect"
+
+#Indicate whether reads are paired (true) or single (false)
+paired_end: true
+
+#filename excluding sample name. no need to edit if paired_end = false
+fwd_suffix: "_R1_001.fastq.gz"
+
+#filename excludign sample name. no need to edit if paired_end = false
+rev_suffix: "_R2_001.fastq.gz"
+
+#file name excluding sample name. no need to edit if paired_end = true 
+se_suffix: ".fastq.gz"
+
+#length of your reads. pre-trimming reads not recommended
+readlen: 150
+
+#full path to directory with raw fastq files
+fq_dir: "/projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads"
+
+#full path to folder with eukdetect database files
+database_dir: "/projects/p31618/databases/eukdb"
+
+#name of database. Default is original genomes only database name
+database_prefix: "ncbi_eukprot_met_arch_markers.fna"
+
+#full path to eukdetect installation folder
+eukdetect_dir: "/projects/p31618/software/EukDetect"
+
+#list sample names here. fastqs must correspond to {samplename}{se_suffix} for SE reads or {samplename}{fwd_suffix} and {samplename}{rev_suffix} for PE
+#each sample name should be preceded by 2 spaces and followed by a colon character
+samples:
+  AW_RC_01_21_S2:
+  AW_RC_05_21_S5:
+  AW_RC_10_21_S16:
+  BB_DV_03_21_S15:
+  BL_LC_01_21_S4:
+  BP_LC_01_21_S7:
+  BS_MC_01_21_S1:
+  CX_GO_08_21_S17:
+  CX_GO_13_21_S3:
+  EN_DV_02_21_S20:
+  EP_LC_04_21_S19:
+  FR_ND_02_21_S8:
+  GZ_MC_03_20_S13:
+  GZ_MC_13_20_S11:
+  PA_XL_04_20_S12:
+  PA_XL_07_20_S21:
+  PP_CC_04_21_S6:
+  TS_DV_03_21_S14:
+  VD_CC_01_21_S18:
+  VH_MC_02_21_S10:
+  VH_MC_04_21_S9:

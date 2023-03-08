@@ -1,0 +1,107 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	21	bam2fastq
+	21	countreads
+	21	find_low_complexity
+	21	fixmate
+	21	index
+	21	markdup
+	21	remove_low_complexity
+	21	rmsort
+	1	runall
+	21	runaln
+	21	taxonomize
+	211
+Select jobs to execute...
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_04_21_S9_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_04_21_S9_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.sorted.bam
+    jobid: 21
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_03_20_S13_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_03_20_S13_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.sorted.bam
+    jobid: 13
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_08_21_S17_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_08_21_S17_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.sorted.bam
+    jobid: 8
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_04_20_S12_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_04_20_S12_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.sorted.bam
+    jobid: 15
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VD_CC_01_21_S18_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VD_CC_01_21_S18_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.sorted.bam
+    jobid: 19
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BS_MC_01_21_S1_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BS_MC_01_21_S1_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.sorted.bam
+    jobid: 7
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_13_20_S11_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_13_20_S11_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.sorted.bam
+    jobid: 14
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_01_21_S2_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_01_21_S2_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.sorted.bam
+    jobid: 1
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_13_21_S3_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_13_21_S3_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.sorted.bam
+    jobid: 9
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_07_20_S21_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_07_20_S21_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.sorted.bam
+    jobid: 16
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BL_LC_01_21_S4_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BL_LC_01_21_S4_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.sorted.bam
+    jobid: 5
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[Mon Jan 16 14:42:40 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_02_21_S10_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_02_21_S10_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.sorted.bam
+    jobid: 20
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/mjs9560/scripts/mammoth-metagenomes/bash/.snakemake/log/2023-01-16T144239.859744.snakemake.log

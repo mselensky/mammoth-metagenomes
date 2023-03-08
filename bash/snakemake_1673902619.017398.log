@@ -1,0 +1,2955 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	21	bam2fastq
+	21	countreads
+	21	find_low_complexity
+	21	fixmate
+	21	index
+	21	markdup
+	21	remove_low_complexity
+	21	rmsort
+	1	runall
+	21	runaln
+	21	taxonomize
+	211
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/EN_DV_02_21_S20_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/EN_DV_02_21_S20_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter.sorted.bam
+    jobid: 64
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_08_21_S17_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_08_21_S17_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.sorted.bam
+    jobid: 79
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_10_21_S16_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_10_21_S16_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter.sorted.bam
+    jobid: 83
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BS_MC_01_21_S1_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BS_MC_01_21_S1_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.sorted.bam
+    jobid: 100
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/EP_LC_04_21_S19_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/EP_LC_04_21_S19_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter.sorted.bam
+    jobid: 36
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VD_CC_01_21_S18_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VD_CC_01_21_S18_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.sorted.bam
+    jobid: 13
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_03_20_S13_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_03_20_S13_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.sorted.bam
+    jobid: 32
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_02_21_S10_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_02_21_S10_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.sorted.bam
+    jobid: 91
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BL_LC_01_21_S4_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BL_LC_01_21_S4_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.sorted.bam
+    jobid: 39
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[Mon Jan 16 14:57:00 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PP_CC_04_21_S6_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PP_CC_04_21_S6_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter.sorted.bam
+    jobid: 60
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 14:57:01 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_01_21_S2_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_01_21_S2_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.sorted.bam
+    jobid: 88
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+[Mon Jan 16 14:57:01 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/FR_ND_02_21_S8_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/FR_ND_02_21_S8_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter.sorted.bam
+    jobid: 72
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:47:36 2023]
+Finished job 60.
+1 of 211 steps (0.47%) done
+
+[Mon Jan 16 15:47:36 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_07_20_S21_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_07_20_S21_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.sorted.bam
+    jobid: 94
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:47:52 2023]
+Finished job 13.
+2 of 211 steps (0.95%) done
+
+[Mon Jan 16 15:47:52 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_04_20_S12_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/PA_XL_04_20_S12_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.sorted.bam
+    jobid: 19
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:50:29 2023]
+Finished job 83.
+3 of 211 steps (1%) done
+
+[Mon Jan 16 15:50:29 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_05_21_S5_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/AW_RC_05_21_S5_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter.sorted.bam
+    jobid: 50
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:50:50 2023]
+Finished job 72.
+4 of 211 steps (2%) done
+
+[Mon Jan 16 15:50:50 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BB_DV_03_21_S15_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BB_DV_03_21_S15_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter.sorted.bam
+    jobid: 78
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:51:03 2023]
+Finished job 91.
+5 of 211 steps (2%) done
+
+[Mon Jan 16 15:51:03 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BP_LC_01_21_S7_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/BP_LC_01_21_S7_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter.sorted.bam
+    jobid: 4
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:51:58 2023]
+Finished job 39.
+6 of 211 steps (3%) done
+
+[Mon Jan 16 15:51:58 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_04_21_S9_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/VH_MC_04_21_S9_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.sorted.bam
+    jobid: 87
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:52:03 2023]
+Finished job 100.
+7 of 211 steps (3%) done
+
+[Mon Jan 16 15:52:03 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/TS_DV_03_21_S14_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/TS_DV_03_21_S14_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter.sorted.bam
+    jobid: 99
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:53:30 2023]
+Finished job 88.
+8 of 211 steps (4%) done
+
+[Mon Jan 16 15:53:30 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_13_21_S3_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/CX_GO_13_21_S3_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.sorted.bam
+    jobid: 47
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 15:55:07 2023]
+Finished job 79.
+9 of 211 steps (4%) done
+
+[Mon Jan 16 15:55:07 2023]
+rule runaln:
+    input: /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_13_20_S11_R1_001.fastq.gz, /projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads/GZ_MC_13_20_S11_R2_001.fastq.gz
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.sorted.bam
+    jobid: 34
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+[33mJob counts:
+	count	jobs
+	1	runaln
+	1[0m
+[Mon Jan 16 16:09:33 2023]
+Finished job 36.
+10 of 211 steps (5%) done
+
+[Mon Jan 16 16:09:33 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter.fq
+    jobid: 197
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+[Mon Jan 16 16:09:34 2023]
+Finished job 197.
+11 of 211 steps (5%) done
+
+[Mon Jan 16 16:09:34 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_low_complexity.txt
+    jobid: 176
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:09:34 2023]
+Finished job 176.
+12 of 211 steps (6%) done
+
+[Mon Jan 16 16:09:34 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 155
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_low_complexity.txt.
+[Mon Jan 16 16:09:42 2023]
+Finished job 155.
+13 of 211 steps (6%) done
+
+[Mon Jan 16 16:09:42 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 134
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:09:49 2023]
+Finished job 134.
+14 of 211 steps (7%) done
+
+[Mon Jan 16 16:09:49 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 113
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+[Mon Jan 16 16:09:55 2023]
+Finished job 64.
+15 of 211 steps (7%) done
+
+[Mon Jan 16 16:09:55 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.fq
+    jobid: 190
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+[Mon Jan 16 16:09:56 2023]
+Finished job 190.
+16 of 211 steps (8%) done
+
+[Mon Jan 16 16:09:56 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_low_complexity.txt
+    jobid: 169
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:09:56 2023]
+Finished job 169.
+17 of 211 steps (8%) done
+
+[Mon Jan 16 16:09:56 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 148
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 7 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 14
+WRITTEN: 14
+EXCLUDED: 0
+EXAMINED: 14
+PAIRED: 14
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:09:56 2023]
+Finished job 113.
+18 of 211 steps (9%) done
+
+[Mon Jan 16 16:09:56 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 62
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:10:00 2023]
+Finished job 62.
+19 of 211 steps (9%) done
+
+[Mon Jan 16 16:10:00 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 6
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+[Mon Jan 16 16:10:01 2023]
+Finished job 6.
+20 of 211 steps (9%) done
+
+[Mon Jan 16 16:10:01 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_read_counts_and_mismatches.txt
+    jobid: 33
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_low_complexity.txt.
+[Mon Jan 16 16:10:04 2023]
+Finished job 148.
+21 of 211 steps (10%) done
+
+[Mon Jan 16 16:10:04 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 127
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:10:11 2023]
+Finished job 127.
+22 of 211 steps (10%) done
+
+[Mon Jan 16 16:10:11 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 106
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 2 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 5
+WRITTEN: 5
+EXCLUDED: 0
+EXAMINED: 5
+PAIRED: 4
+SINGLE: 1
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:10:19 2023]
+Finished job 106.
+23 of 211 steps (11%) done
+
+[Mon Jan 16 16:10:19 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 5
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+[Mon Jan 16 16:10:20 2023]
+Finished job 33.
+24 of 211 steps (11%) done
+
+[Mon Jan 16 16:10:20 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EP_LC_04_21_S19_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EP_LC_04_21_S19_filtered_hits_eukfrac.txt
+    jobid: 18
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EP_LC_04_21_S19
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:10:23 2023]
+Finished job 5.
+25 of 211 steps (12%) done
+
+[Mon Jan 16 16:10:23 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 45
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+[Mon Jan 16 16:10:23 2023]
+Finished job 45.
+26 of 211 steps (12%) done
+
+[Mon Jan 16 16:10:23 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_read_counts_and_mismatches.txt
+    jobid: 1
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+[Mon Jan 16 16:10:34 2023]
+Finished job 18.
+27 of 211 steps (13%) done
+
+[Mon Jan 16 16:10:34 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.fq
+    jobid: 196
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[Mon Jan 16 16:10:36 2023]
+Finished job 196.
+28 of 211 steps (13%) done
+
+[Mon Jan 16 16:10:36 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_low_complexity.txt
+    jobid: 175
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:10:36 2023]
+Finished job 175.
+29 of 211 steps (14%) done
+
+[Mon Jan 16 16:10:36 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 154
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[Mon Jan 16 16:10:42 2023]
+Finished job 1.
+30 of 211 steps (14%) done
+
+[Mon Jan 16 16:10:42 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_02_21_S10_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_02_21_S10_filtered_hits_eukfrac.txt
+    jobid: 53
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_02_21_S10
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_low_complexity.txt.
+[Mon Jan 16 16:10:43 2023]
+Finished job 154.
+31 of 211 steps (15%) done
+
+[Mon Jan 16 16:10:43 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 133
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[Mon Jan 16 16:10:51 2023]
+Finished job 53.
+32 of 211 steps (15%) done
+
+[Mon Jan 16 16:10:51 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.fq
+    jobid: 193
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:10:51 2023]
+Finished job 133.
+33 of 211 steps (16%) done
+
+[Mon Jan 16 16:10:51 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 112
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[Mon Jan 16 16:10:52 2023]
+Finished job 193.
+34 of 211 steps (16%) done
+
+[Mon Jan 16 16:10:52 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_low_complexity.txt
+    jobid: 172
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:10:52 2023]
+Finished job 172.
+35 of 211 steps (17%) done
+
+[Mon Jan 16 16:10:52 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 151
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[markdup] warning: unable to calculate estimated library size. Read pairs 1 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 2
+WRITTEN: 2
+EXCLUDED: 0
+EXAMINED: 2
+PAIRED: 2
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:10:58 2023]
+Finished job 112.
+36 of 211 steps (17%) done
+
+[Mon Jan 16 16:10:58 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 61
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_low_complexity.txt.
+[Mon Jan 16 16:11:00 2023]
+Finished job 151.
+37 of 211 steps (18%) done
+
+[Mon Jan 16 16:11:00 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 130
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:11:02 2023]
+Finished job 61.
+38 of 211 steps (18%) done
+
+[Mon Jan 16 16:11:02 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 67
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[Mon Jan 16 16:11:03 2023]
+Finished job 67.
+39 of 211 steps (18%) done
+
+[Mon Jan 16 16:11:03 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_read_counts_and_mismatches.txt
+    jobid: 103
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:11:07 2023]
+Finished job 130.
+40 of 211 steps (19%) done
+
+[Mon Jan 16 16:11:07 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 109
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 1
+WRITTEN: 1
+EXCLUDED: 0
+EXAMINED: 1
+PAIRED: 0
+SINGLE: 1
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:11:15 2023]
+Finished job 109.
+41 of 211 steps (19%) done
+
+[Mon Jan 16 16:11:15 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 41
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:11:18 2023]
+Finished job 41.
+42 of 211 steps (20%) done
+
+[Mon Jan 16 16:11:18 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 30
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+[Mon Jan 16 16:11:19 2023]
+Finished job 30.
+43 of 211 steps (20%) done
+
+[Mon Jan 16 16:11:19 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_read_counts_and_mismatches.txt
+    jobid: 24
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+[Mon Jan 16 16:11:21 2023]
+Finished job 103.
+44 of 211 steps (21%) done
+
+[Mon Jan 16 16:11:21 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BL_LC_01_21_S4_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BL_LC_01_21_S4_filtered_hits_eukfrac.txt
+    jobid: 37
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BL_LC_01_21_S4
+
+[Mon Jan 16 16:11:30 2023]
+Finished job 37.
+45 of 211 steps (21%) done
+
+[Mon Jan 16 16:11:30 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.fq
+    jobid: 204
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[Mon Jan 16 16:11:31 2023]
+Finished job 204.
+46 of 211 steps (22%) done
+
+[Mon Jan 16 16:11:31 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter.fq
+    jobid: 206
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+[Mon Jan 16 16:11:32 2023]
+Finished job 206.
+47 of 211 steps (22%) done
+
+[Mon Jan 16 16:11:32 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.fq
+    jobid: 210
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[Mon Jan 16 16:11:33 2023]
+Finished job 210.
+48 of 211 steps (23%) done
+
+[Mon Jan 16 16:11:33 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter.fq
+    jobid: 207
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+[Mon Jan 16 16:11:34 2023]
+Finished job 207.
+49 of 211 steps (23%) done
+
+[Mon Jan 16 16:11:34 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter.fq
+    jobid: 200
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+[Mon Jan 16 16:11:36 2023]
+Finished job 200.
+50 of 211 steps (24%) done
+
+[Mon Jan 16 16:11:36 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.fq
+    jobid: 208
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+[Mon Jan 16 16:11:37 2023]
+Finished job 208.
+51 of 211 steps (24%) done
+
+[Mon Jan 16 16:11:37 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter.fq
+    jobid: 205
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+[Mon Jan 16 16:11:38 2023]
+Finished job 24.
+52 of 211 steps (25%) done
+
+[Mon Jan 16 16:11:38 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_01_21_S2_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_01_21_S2_filtered_hits_eukfrac.txt
+    jobid: 17
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_01_21_S2
+
+[Mon Jan 16 16:11:38 2023]
+Finished job 205.
+53 of 211 steps (25%) done
+
+[Mon Jan 16 16:11:38 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_low_complexity.txt
+    jobid: 189
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:11:38 2023]
+Finished job 189.
+54 of 211 steps (26%) done
+
+[Mon Jan 16 16:11:38 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 168
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_low_complexity.txt.
+[Mon Jan 16 16:11:46 2023]
+Finished job 168.
+55 of 211 steps (26%) done
+
+[Mon Jan 16 16:11:46 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 147
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[Mon Jan 16 16:11:46 2023]
+Finished job 17.
+56 of 211 steps (27%) done
+
+[Mon Jan 16 16:11:46 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_low_complexity.txt
+    jobid: 186
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:11:46 2023]
+Finished job 186.
+57 of 211 steps (27%) done
+
+[Mon Jan 16 16:11:46 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 165
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:11:53 2023]
+Finished job 147.
+58 of 211 steps (27%) done
+
+[Mon Jan 16 16:11:53 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 126
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_low_complexity.txt.
+[Mon Jan 16 16:11:54 2023]
+Finished job 165.
+59 of 211 steps (28%) done
+
+[Mon Jan 16 16:11:54 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 144
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:12:01 2023]
+Finished job 126.
+60 of 211 steps (28%) done
+
+[Mon Jan 16 16:12:01 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 104
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:12:01 2023]
+Finished job 144.
+61 of 211 steps (29%) done
+
+[Mon Jan 16 16:12:01 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 123
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:12:04 2023]
+Finished job 104.
+62 of 211 steps (29%) done
+
+[Mon Jan 16 16:12:04 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 38
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[Mon Jan 16 16:12:05 2023]
+Finished job 38.
+63 of 211 steps (30%) done
+
+[Mon Jan 16 16:12:05 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_read_counts_and_mismatches.txt
+    jobid: 8
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:12:09 2023]
+Finished job 123.
+64 of 211 steps (30%) done
+
+[Mon Jan 16 16:12:09 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 97
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:12:13 2023]
+Finished job 97.
+65 of 211 steps (31%) done
+
+[Mon Jan 16 16:12:13 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 42
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+[Mon Jan 16 16:12:13 2023]
+Finished job 42.
+66 of 211 steps (31%) done
+
+[Mon Jan 16 16:12:13 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_read_counts_and_mismatches.txt
+    jobid: 69
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+[Mon Jan 16 16:12:22 2023]
+Finished job 8.
+67 of 211 steps (32%) done
+
+[Mon Jan 16 16:12:22 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_08_21_S17_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_08_21_S17_filtered_hits_eukfrac.txt
+    jobid: 12
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_08_21_S17
+
+[Mon Jan 16 16:12:25 2023]
+Finished job 12.
+68 of 211 steps (32%) done
+
+[Mon Jan 16 16:12:25 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_low_complexity.txt
+    jobid: 185
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:12:25 2023]
+Finished job 185.
+69 of 211 steps (33%) done
+
+[Mon Jan 16 16:12:25 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 164
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[Mon Jan 16 16:12:30 2023]
+Finished job 69.
+70 of 211 steps (33%) done
+
+[Mon Jan 16 16:12:30 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_10_21_S16_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_10_21_S16_filtered_hits_eukfrac.txt
+    jobid: 54
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_10_21_S16
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_low_complexity.txt.
+[Mon Jan 16 16:12:33 2023]
+Finished job 164.
+71 of 211 steps (34%) done
+
+[Mon Jan 16 16:12:33 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 143
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+[Mon Jan 16 16:12:33 2023]
+Finished job 54.
+72 of 211 steps (34%) done
+
+[Mon Jan 16 16:12:33 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_low_complexity.txt
+    jobid: 187
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:12:33 2023]
+Finished job 187.
+73 of 211 steps (35%) done
+
+[Mon Jan 16 16:12:33 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 166
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:12:41 2023]
+Finished job 143.
+74 of 211 steps (35%) done
+
+[Mon Jan 16 16:12:41 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 122
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_low_complexity.txt.
+[Mon Jan 16 16:12:41 2023]
+Finished job 166.
+75 of 211 steps (36%) done
+
+[Mon Jan 16 16:12:41 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 145
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:12:48 2023]
+Finished job 122.
+76 of 211 steps (36%) done
+
+[Mon Jan 16 16:12:48 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 95
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:12:48 2023]
+Finished job 145.
+77 of 211 steps (36%) done
+
+[Mon Jan 16 16:12:48 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 124
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:12:52 2023]
+Finished job 95.
+78 of 211 steps (37%) done
+
+[Mon Jan 16 16:12:52 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 59
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+[Mon Jan 16 16:12:52 2023]
+Finished job 59.
+79 of 211 steps (37%) done
+
+[Mon Jan 16 16:12:52 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_read_counts_and_mismatches.txt
+    jobid: 71
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:12:56 2023]
+Finished job 124.
+80 of 211 steps (38%) done
+
+[Mon Jan 16 16:12:56 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 98
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:12:59 2023]
+Finished job 98.
+81 of 211 steps (38%) done
+
+[Mon Jan 16 16:12:59 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 21
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+[Mon Jan 16 16:13:00 2023]
+Finished job 21.
+82 of 211 steps (39%) done
+
+[Mon Jan 16 16:13:00 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_read_counts_and_mismatches.txt
+    jobid: 28
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+[Mon Jan 16 16:13:09 2023]
+Finished job 71.
+83 of 211 steps (39%) done
+
+[Mon Jan 16 16:13:09 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EN_DV_02_21_S20_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EN_DV_02_21_S20_filtered_hits_eukfrac.txt
+    jobid: 16
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=EN_DV_02_21_S20
+
+[Mon Jan 16 16:13:12 2023]
+Finished job 16.
+84 of 211 steps (40%) done
+
+[Mon Jan 16 16:13:12 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_low_complexity.txt
+    jobid: 183
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:13:12 2023]
+Finished job 183.
+85 of 211 steps (40%) done
+
+[Mon Jan 16 16:13:12 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 162
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[Mon Jan 16 16:13:17 2023]
+Finished job 28.
+86 of 211 steps (41%) done
+
+[Mon Jan 16 16:13:17 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BS_MC_01_21_S1_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BS_MC_01_21_S1_filtered_hits_eukfrac.txt
+    jobid: 20
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BS_MC_01_21_S1
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_low_complexity.txt.
+[Mon Jan 16 16:13:21 2023]
+Finished job 162.
+87 of 211 steps (41%) done
+
+[Mon Jan 16 16:13:21 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 141
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[Mon Jan 16 16:13:21 2023]
+Finished job 20.
+88 of 211 steps (42%) done
+
+[Mon Jan 16 16:13:21 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_low_complexity.txt
+    jobid: 179
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:13:21 2023]
+Finished job 179.
+89 of 211 steps (42%) done
+
+[Mon Jan 16 16:13:21 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 158
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:13:29 2023]
+Finished job 141.
+90 of 211 steps (43%) done
+
+[Mon Jan 16 16:13:29 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 120
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_low_complexity.txt.
+[Mon Jan 16 16:13:29 2023]
+Finished job 158.
+91 of 211 steps (43%) done
+
+[Mon Jan 16 16:13:29 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 137
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+[Mon Jan 16 16:13:33 2023]
+Finished job 32.
+92 of 211 steps (44%) done
+
+[Mon Jan 16 16:13:33 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.fq
+    jobid: 192
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[Mon Jan 16 16:13:35 2023]
+Finished job 192.
+93 of 211 steps (44%) done
+
+[Mon Jan 16 16:13:35 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_low_complexity.txt
+    jobid: 171
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:13:35 2023]
+Finished job 171.
+94 of 211 steps (45%) done
+
+[Mon Jan 16 16:13:35 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 150
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:13:35 2023]
+Finished job 120.
+95 of 211 steps (45%) done
+
+[Mon Jan 16 16:13:35 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 89
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:13:36 2023]
+Finished job 137.
+96 of 211 steps (45%) done
+
+[Mon Jan 16 16:13:36 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 116
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:13:39 2023]
+Finished job 89.
+97 of 211 steps (46%) done
+
+[Mon Jan 16 16:13:39 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 68
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[Mon Jan 16 16:13:40 2023]
+Finished job 68.
+98 of 211 steps (46%) done
+
+[Mon Jan 16 16:13:40 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_read_counts_and_mismatches.txt
+    jobid: 22
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_low_complexity.txt.
+[Mon Jan 16 16:13:40 2023]
+Finished job 150.
+99 of 211 steps (47%) done
+
+[Mon Jan 16 16:13:40 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 129
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:13:43 2023]
+Finished job 116.
+100 of 211 steps (47%) done
+
+[Mon Jan 16 16:13:43 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 74
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:13:47 2023]
+Finished job 74.
+101 of 211 steps (48%) done
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:13:47 2023]
+Finished job 129.
+102 of 211 steps (48%) done
+
+[Mon Jan 16 16:13:47 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 108
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+
+[Mon Jan 16 16:13:47 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 86
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+[Mon Jan 16 16:13:48 2023]
+Finished job 86.
+103 of 211 steps (49%) done
+
+[Mon Jan 16 16:13:48 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_read_counts_and_mismatches.txt
+    jobid: 80
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:13:54 2023]
+Finished job 108.
+104 of 211 steps (49%) done
+
+[Mon Jan 16 16:13:54 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 31
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[Mon Jan 16 16:13:56 2023]
+Finished job 22.
+105 of 211 steps (50%) done
+
+[Mon Jan 16 16:13:56 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VD_CC_01_21_S18_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VD_CC_01_21_S18_filtered_hits_eukfrac.txt
+    jobid: 58
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VD_CC_01_21_S18
+
+[Mon Jan 16 16:13:58 2023]
+Finished job 58.
+106 of 211 steps (50%) done
+
+[Mon Jan 16 16:13:58 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_low_complexity.txt
+    jobid: 184
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:13:58 2023]
+Finished job 184.
+107 of 211 steps (51%) done
+
+[Mon Jan 16 16:13:58 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 163
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:13:58 2023]
+Finished job 31.
+108 of 211 steps (51%) done
+
+[Mon Jan 16 16:13:58 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 66
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[Mon Jan 16 16:13:59 2023]
+Finished job 66.
+109 of 211 steps (52%) done
+
+[Mon Jan 16 16:13:59 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_read_counts_and_mismatches.txt
+    jobid: 49
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[Mon Jan 16 16:14:05 2023]
+Finished job 80.
+110 of 211 steps (52%) done
+
+[Mon Jan 16 16:14:05 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PP_CC_04_21_S6_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PP_CC_04_21_S6_filtered_hits_eukfrac.txt
+    jobid: 23
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PP_CC_04_21_S6
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_low_complexity.txt.
+[Mon Jan 16 16:14:06 2023]
+Finished job 163.
+111 of 211 steps (53%) done
+
+[Mon Jan 16 16:14:06 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 142
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+[Mon Jan 16 16:14:08 2023]
+Finished job 23.
+112 of 211 steps (53%) done
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:14:13 2023]
+Finished job 142.
+113 of 211 steps (54%) done
+
+[Mon Jan 16 16:14:13 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 121
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+[Mon Jan 16 16:14:13 2023]
+Finished job 49.
+114 of 211 steps (54%) done
+
+[Mon Jan 16 16:14:13 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_03_20_S13_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_03_20_S13_filtered_hits_eukfrac.txt
+    jobid: 2
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_03_20_S13
+
+[Mon Jan 16 16:14:16 2023]
+Finished job 2.
+115 of 211 steps (55%) done
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:14:19 2023]
+Finished job 121.
+116 of 211 steps (55%) done
+
+[Mon Jan 16 16:14:19 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 92
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:14:22 2023]
+Finished job 92.
+117 of 211 steps (55%) done
+
+[Mon Jan 16 16:14:22 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 65
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+[Mon Jan 16 16:14:22 2023]
+Finished job 65.
+118 of 211 steps (56%) done
+
+[Mon Jan 16 16:14:22 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_read_counts_and_mismatches.txt
+    jobid: 10
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+[Mon Jan 16 16:14:33 2023]
+Finished job 10.
+119 of 211 steps (56%) done
+
+[Mon Jan 16 16:14:33 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/FR_ND_02_21_S8_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/FR_ND_02_21_S8_filtered_hits_eukfrac.txt
+    jobid: 44
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=FR_ND_02_21_S8
+
+[Mon Jan 16 16:14:35 2023]
+Finished job 44.
+120 of 211 steps (57%) done
+[Mon Jan 16 16:21:50 2023]
+Finished job 34.
+121 of 211 steps (57%) done
+
+[Mon Jan 16 16:21:50 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.fq
+    jobid: 201
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+[Mon Jan 16 16:21:51 2023]
+Finished job 201.
+122 of 211 steps (58%) done
+
+[Mon Jan 16 16:21:51 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_low_complexity.txt
+    jobid: 180
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:21:51 2023]
+Finished job 180.
+123 of 211 steps (58%) done
+
+[Mon Jan 16 16:21:51 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 159
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_low_complexity.txt.
+[Mon Jan 16 16:21:56 2023]
+Finished job 159.
+124 of 211 steps (59%) done
+
+[Mon Jan 16 16:21:56 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 138
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:22:01 2023]
+Finished job 138.
+125 of 211 steps (59%) done
+
+[Mon Jan 16 16:22:01 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 117
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 201
+WRITTEN: 170
+EXCLUDED: 0
+EXAMINED: 201
+PAIRED: 184
+SINGLE: 17
+DUPLICATE PAIR: 30
+DUPLICATE SINGLE: 1
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 31
+DUPLICATE TOTAL: 31
+ESTIMATED_LIBRARY_SIZE: 250
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:22:06 2023]
+Finished job 117.
+126 of 211 steps (60%) done
+
+[Mon Jan 16 16:22:06 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 76
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:22:08 2023]
+Finished job 76.
+127 of 211 steps (60%) done
+
+[Mon Jan 16 16:22:08 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 52
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+[Mon Jan 16 16:22:09 2023]
+Finished job 52.
+128 of 211 steps (61%) done
+
+[Mon Jan 16 16:22:09 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_read_counts_and_mismatches.txt
+    jobid: 102
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+[Mon Jan 16 16:22:22 2023]
+Finished job 102.
+129 of 211 steps (61%) done
+
+[Mon Jan 16 16:22:22 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_13_20_S11_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_13_20_S11_filtered_hits_eukfrac.txt
+    jobid: 3
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=GZ_MC_13_20_S11
+
+[Mon Jan 16 16:22:30 2023]
+Finished job 3.
+130 of 211 steps (62%) done
+[Mon Jan 16 16:23:22 2023]
+Finished job 47.
+131 of 211 steps (62%) done
+
+[Mon Jan 16 16:23:22 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.fq
+    jobid: 199
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+[Mon Jan 16 16:23:23 2023]
+Finished job 199.
+132 of 211 steps (63%) done
+
+[Mon Jan 16 16:23:23 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_low_complexity.txt
+    jobid: 178
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:23:23 2023]
+Finished job 178.
+133 of 211 steps (63%) done
+
+[Mon Jan 16 16:23:23 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 157
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_low_complexity.txt.
+[Mon Jan 16 16:23:27 2023]
+Finished job 157.
+134 of 211 steps (64%) done
+
+[Mon Jan 16 16:23:27 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 136
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:23:30 2023]
+Finished job 136.
+135 of 211 steps (64%) done
+
+[Mon Jan 16 16:23:30 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 115
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 49
+WRITTEN: 41
+EXCLUDED: 0
+EXAMINED: 49
+PAIRED: 48
+SINGLE: 1
+DUPLICATE PAIR: 8
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 8
+DUPLICATE TOTAL: 8
+ESTIMATED_LIBRARY_SIZE: 63
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:23:33 2023]
+Finished job 115.
+136 of 211 steps (64%) done
+
+[Mon Jan 16 16:23:33 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 73
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:23:35 2023]
+Finished job 73.
+137 of 211 steps (65%) done
+
+[Mon Jan 16 16:23:35 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 84
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+[Mon Jan 16 16:23:36 2023]
+Finished job 84.
+138 of 211 steps (65%) done
+
+[Mon Jan 16 16:23:36 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_read_counts_and_mismatches.txt
+    jobid: 90
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+[Mon Jan 16 16:23:47 2023]
+Finished job 90.
+139 of 211 steps (66%) done
+
+[Mon Jan 16 16:23:47 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_13_21_S3_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_13_21_S3_filtered_hits_eukfrac.txt
+    jobid: 40
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=CX_GO_13_21_S3
+
+[Mon Jan 16 16:23:49 2023]
+Finished job 99.
+140 of 211 steps (66%) done
+
+[Mon Jan 16 16:23:49 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter.fq
+    jobid: 195
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+[Mon Jan 16 16:23:50 2023]
+Finished job 195.
+141 of 211 steps (67%) done
+
+[Mon Jan 16 16:23:50 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_low_complexity.txt
+    jobid: 174
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:23:50 2023]
+Finished job 174.
+142 of 211 steps (67%) done
+
+[Mon Jan 16 16:23:50 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 153
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[Mon Jan 16 16:23:53 2023]
+Finished job 40.
+143 of 211 steps (68%) done
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_low_complexity.txt.
+[Mon Jan 16 16:23:54 2023]
+Finished job 153.
+144 of 211 steps (68%) done
+
+[Mon Jan 16 16:23:54 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 132
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:23:57 2023]
+Finished job 132.
+145 of 211 steps (69%) done
+
+[Mon Jan 16 16:23:57 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 111
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:24:02 2023]
+Finished job 111.
+146 of 211 steps (69%) done
+
+[Mon Jan 16 16:24:02 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 57
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:24:04 2023]
+Finished job 57.
+147 of 211 steps (70%) done
+
+[Mon Jan 16 16:24:04 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 55
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+[Mon Jan 16 16:24:04 2023]
+Finished job 55.
+148 of 211 steps (70%) done
+
+[Mon Jan 16 16:24:04 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_read_counts_and_mismatches.txt
+    jobid: 105
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+[Mon Jan 16 16:24:12 2023]
+Finished job 105.
+149 of 211 steps (71%) done
+
+[Mon Jan 16 16:24:12 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/TS_DV_03_21_S14_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/TS_DV_03_21_S14_filtered_hits_eukfrac.txt
+    jobid: 26
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=TS_DV_03_21_S14
+
+[Mon Jan 16 16:24:14 2023]
+Finished job 26.
+150 of 211 steps (71%) done
+[Mon Jan 16 16:26:16 2023]
+Finished job 50.
+151 of 211 steps (72%) done
+
+[Mon Jan 16 16:26:16 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter.fq
+    jobid: 203
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+[Mon Jan 16 16:26:16 2023]
+Finished job 203.
+152 of 211 steps (72%) done
+
+[Mon Jan 16 16:26:16 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_low_complexity.txt
+    jobid: 182
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:26:16 2023]
+Finished job 182.
+153 of 211 steps (73%) done
+
+[Mon Jan 16 16:26:16 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 161
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_low_complexity.txt.
+[Mon Jan 16 16:26:19 2023]
+Finished job 161.
+154 of 211 steps (73%) done
+
+[Mon Jan 16 16:26:19 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 140
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:26:22 2023]
+Finished job 140.
+155 of 211 steps (73%) done
+
+[Mon Jan 16 16:26:22 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 119
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 5 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 10
+WRITTEN: 10
+EXCLUDED: 0
+EXAMINED: 10
+PAIRED: 10
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:26:25 2023]
+Finished job 119.
+156 of 211 steps (74%) done
+
+[Mon Jan 16 16:26:25 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 82
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:26:27 2023]
+Finished job 82.
+157 of 211 steps (74%) done
+
+[Mon Jan 16 16:26:27 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 9
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+[Mon Jan 16 16:26:27 2023]
+Finished job 9.
+158 of 211 steps (75%) done
+
+[Mon Jan 16 16:26:27 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_read_counts_and_mismatches.txt
+    jobid: 56
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+[Mon Jan 16 16:26:35 2023]
+Finished job 56.
+159 of 211 steps (75%) done
+
+[Mon Jan 16 16:26:35 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_05_21_S5_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_05_21_S5_filtered_hits_eukfrac.txt
+    jobid: 85
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=AW_RC_05_21_S5
+
+[Mon Jan 16 16:26:38 2023]
+Finished job 85.
+160 of 211 steps (76%) done
+[Mon Jan 16 16:27:26 2023]
+Finished job 87.
+161 of 211 steps (76%) done
+
+[Mon Jan 16 16:27:26 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.fq
+    jobid: 198
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+[Mon Jan 16 16:27:26 2023]
+Finished job 198.
+162 of 211 steps (77%) done
+
+[Mon Jan 16 16:27:26 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_low_complexity.txt
+    jobid: 177
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:27:26 2023]
+Finished job 177.
+163 of 211 steps (77%) done
+
+[Mon Jan 16 16:27:26 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 156
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_low_complexity.txt.
+[Mon Jan 16 16:27:29 2023]
+Finished job 156.
+164 of 211 steps (78%) done
+
+[Mon Jan 16 16:27:29 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 135
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:27:31 2023]
+Finished job 135.
+165 of 211 steps (78%) done
+
+[Mon Jan 16 16:27:31 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 114
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:27:34 2023]
+Finished job 114.
+166 of 211 steps (79%) done
+
+[Mon Jan 16 16:27:34 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 70
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:27:35 2023]
+Finished job 70.
+167 of 211 steps (79%) done
+
+[Mon Jan 16 16:27:35 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 96
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+[Mon Jan 16 16:27:35 2023]
+Finished job 96.
+168 of 211 steps (80%) done
+
+[Mon Jan 16 16:27:35 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_read_counts_and_mismatches.txt
+    jobid: 93
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+[Mon Jan 16 16:27:38 2023]
+Finished job 78.
+169 of 211 steps (80%) done
+
+[Mon Jan 16 16:27:38 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter.fq
+    jobid: 194
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[Mon Jan 16 16:27:39 2023]
+Finished job 194.
+170 of 211 steps (81%) done
+
+[Mon Jan 16 16:27:39 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_low_complexity.txt
+    jobid: 173
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:27:39 2023]
+Finished job 173.
+171 of 211 steps (81%) done
+
+[Mon Jan 16 16:27:39 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 152
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[Mon Jan 16 16:27:41 2023]
+Finished job 93.
+172 of 211 steps (82%) done
+
+[Mon Jan 16 16:27:41 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_04_21_S9_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_04_21_S9_filtered_hits_eukfrac.txt
+    jobid: 63
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=VH_MC_04_21_S9
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_low_complexity.txt.
+[Mon Jan 16 16:27:41 2023]
+Finished job 152.
+173 of 211 steps (82%) done
+
+[Mon Jan 16 16:27:41 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 131
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[Mon Jan 16 16:27:42 2023]
+Finished job 63.
+174 of 211 steps (82%) done
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:27:44 2023]
+Finished job 131.
+175 of 211 steps (83%) done
+
+[Mon Jan 16 16:27:44 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 110
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:27:46 2023]
+Finished job 110.
+176 of 211 steps (83%) done
+
+[Mon Jan 16 16:27:46 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 46
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:27:47 2023]
+Finished job 46.
+177 of 211 steps (84%) done
+
+[Mon Jan 16 16:27:47 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 43
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[Mon Jan 16 16:27:47 2023]
+Finished job 43.
+178 of 211 steps (84%) done
+
+[Mon Jan 16 16:27:47 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_read_counts_and_mismatches.txt
+    jobid: 7
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[Mon Jan 16 16:27:53 2023]
+Finished job 7.
+179 of 211 steps (85%) done
+
+[Mon Jan 16 16:27:53 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BB_DV_03_21_S15_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BB_DV_03_21_S15_filtered_hits_eukfrac.txt
+    jobid: 35
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BB_DV_03_21_S15
+
+[Mon Jan 16 16:27:54 2023]
+Finished job 35.
+180 of 211 steps (85%) done
+[Mon Jan 16 16:28:10 2023]
+Finished job 19.
+181 of 211 steps (86%) done
+
+[Mon Jan 16 16:28:10 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.fq
+    jobid: 202
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[Mon Jan 16 16:28:10 2023]
+Finished job 202.
+182 of 211 steps (86%) done
+
+[Mon Jan 16 16:28:10 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_low_complexity.txt
+    jobid: 181
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:28:10 2023]
+Finished job 181.
+183 of 211 steps (87%) done
+
+[Mon Jan 16 16:28:10 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 160
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_low_complexity.txt.
+[Mon Jan 16 16:28:13 2023]
+Finished job 160.
+184 of 211 steps (87%) done
+
+[Mon Jan 16 16:28:13 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 139
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:28:15 2023]
+Finished job 139.
+185 of 211 steps (88%) done
+
+[Mon Jan 16 16:28:15 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 118
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:28:17 2023]
+Finished job 118.
+186 of 211 steps (88%) done
+
+[Mon Jan 16 16:28:17 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 77
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:28:18 2023]
+Finished job 77.
+187 of 211 steps (89%) done
+
+[Mon Jan 16 16:28:18 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 75
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[Mon Jan 16 16:28:19 2023]
+Finished job 75.
+188 of 211 steps (89%) done
+
+[Mon Jan 16 16:28:19 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_read_counts_and_mismatches.txt
+    jobid: 25
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[Mon Jan 16 16:28:24 2023]
+Finished job 25.
+189 of 211 steps (90%) done
+
+[Mon Jan 16 16:28:24 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_04_20_S12_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_04_20_S12_filtered_hits_eukfrac.txt
+    jobid: 81
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_04_20_S12
+
+[Mon Jan 16 16:28:25 2023]
+Finished job 81.
+190 of 211 steps (90%) done
+[Mon Jan 16 16:29:14 2023]
+Finished job 94.
+191 of 211 steps (91%) done
+
+[Mon Jan 16 16:29:14 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.fq
+    jobid: 209
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+[Mon Jan 16 16:29:15 2023]
+Finished job 209.
+192 of 211 steps (91%) done
+
+[Mon Jan 16 16:29:15 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_low_complexity.txt
+    jobid: 188
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:29:15 2023]
+Finished job 188.
+193 of 211 steps (91%) done
+
+[Mon Jan 16 16:29:15 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 167
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_low_complexity.txt.
+[Mon Jan 16 16:29:17 2023]
+Finished job 167.
+194 of 211 steps (92%) done
+
+[Mon Jan 16 16:29:17 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 146
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:29:19 2023]
+Finished job 146.
+195 of 211 steps (92%) done
+
+[Mon Jan 16 16:29:19 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 125
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+[Mon Jan 16 16:29:19 2023]
+Finished job 4.
+196 of 211 steps (93%) done
+
+[Mon Jan 16 16:29:19 2023]
+rule bam2fastq:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter.fq
+    jobid: 191
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+[Mon Jan 16 16:29:20 2023]
+Finished job 191.
+197 of 211 steps (93%) done
+
+[Mon Jan 16 16:29:20 2023]
+rule find_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter.fq
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_low_complexity.txt
+    jobid: 170
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter.fq.
+[Mon Jan 16 16:29:20 2023]
+Finished job 170.
+198 of 211 steps (94%) done
+
+[Mon Jan 16 16:29:20 2023]
+rule remove_low_complexity:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_low_complexity.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter_complexity.sorted.bam
+    jobid: 149
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+[33mJob counts:
+	count	jobs
+	1	remove_low_complexity
+	1[0m
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:29:22 2023]
+Finished job 125.
+199 of 211 steps (94%) done
+
+[Mon Jan 16 16:29:22 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 101
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_low_complexity.txt.
+[Mon Jan 16 16:29:22 2023]
+Finished job 149.
+200 of 211 steps (95%) done
+
+[Mon Jan 16 16:29:22 2023]
+rule fixmate:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter_complexity.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexity_fixmate.bam
+    jobid: 128
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:29:23 2023]
+Finished job 101.
+201 of 211 steps (95%) done
+
+[Mon Jan 16 16:29:23 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 14
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+[Mon Jan 16 16:29:23 2023]
+Finished job 14.
+202 of 211 steps (96%) done
+
+[Mon Jan 16 16:29:23 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_read_counts_and_mismatches.txt
+    jobid: 27
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter_complexity.sorted.bam.
+[Mon Jan 16 16:29:24 2023]
+Finished job 128.
+203 of 211 steps (96%) done
+
+[Mon Jan 16 16:29:24 2023]
+rule markdup:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexity_fixmate.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexity_rmdup.bam
+    jobid: 107
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+[markdup] warning: unable to calculate estimated library size. Read pairs 0 should be greater than duplicate pairs 0, which should both be non zero.
+COMMAND: samtools markdup -r -s - /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexity_rmdup.bam
+READ: 0
+WRITTEN: 0
+EXCLUDED: 0
+EXAMINED: 0
+PAIRED: 0
+SINGLE: 0
+DUPLICATE PAIR: 0
+DUPLICATE SINGLE: 0
+DUPLICATE PAIR OPTICAL: 0
+DUPLICATE SINGLE OPTICAL: 0
+DUPLICATE NON PRIMARY: 0
+DUPLICATE NON PRIMARY OPTICAL: 0
+DUPLICATE PRIMARY TOTAL: 0
+DUPLICATE TOTAL: 0
+ESTIMATED_LIBRARY_SIZE: 0
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexity_fixmate.bam.
+[Mon Jan 16 16:29:27 2023]
+Finished job 107.
+204 of 211 steps (97%) done
+
+[Mon Jan 16 16:29:27 2023]
+rule rmsort:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexity_rmdup.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    jobid: 11
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+Removing temporary output file /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexity_rmdup.bam.
+[Mon Jan 16 16:29:28 2023]
+Finished job 11.
+205 of 211 steps (97%) done
+
+[Mon Jan 16 16:29:28 2023]
+rule index:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai
+    jobid: 29
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+[Mon Jan 16 16:29:28 2023]
+Finished job 29.
+206 of 211 steps (98%) done
+
+[Mon Jan 16 16:29:28 2023]
+rule countreads:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p31618/software/EukDetect/eukdetect/bam_to_pid.py, /projects/p31618/databases/eukdb/ncbi_eukprot_met_arch_markers.fna
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_read_counts_and_mismatches.txt
+    jobid: 15
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+[Mon Jan 16 16:29:28 2023]
+Finished job 27.
+207 of 211 steps (98%) done
+
+[Mon Jan 16 16:29:28 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_07_20_S21_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_07_20_S21_filtered_hits_eukfrac.txt
+    jobid: 51
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=PA_XL_07_20_S21
+
+[Mon Jan 16 16:29:29 2023]
+Finished job 51.
+208 of 211 steps (99%) done
+[Mon Jan 16 16:29:33 2023]
+Finished job 15.
+209 of 211 steps (99%) done
+
+[Mon Jan 16 16:29:33 2023]
+rule taxonomize:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_read_counts_and_mismatches.txt, /projects/p31618/software/EukDetect/eukdetect/count_primary_and_secondary_eukfrac.py, /projects/p31618/databases/eukdb/busco_taxid_link.txt, /projects/p31618/databases/eukdb/specific_and_inherited_markers_per_taxid.txt, /projects/p31618/databases/eukdb/taxa.sqlite, /projects/p31618/databases/eukdb/taxid_cumulativelength.txt
+    output: /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BP_LC_01_21_S7_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BP_LC_01_21_S7_filtered_hits_eukfrac.txt
+    jobid: 48
+    wildcards: output_dir=/projects/p30996/mammoth/metagenomes/eukdetect, sample=BP_LC_01_21_S7
+
+[Mon Jan 16 16:29:35 2023]
+Finished job 48.
+210 of 211 steps (100%) done
+
+[Mon Jan 16 16:29:35 2023]
+localrule runall:
+    input: /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_01_21_S2_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_05_21_S5_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/AW_RC_10_21_S16_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BB_DV_03_21_S15_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BL_LC_01_21_S4_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BP_LC_01_21_S7_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/BS_MC_01_21_S1_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_08_21_S17_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/CX_GO_13_21_S3_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/EN_DV_02_21_S20_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/EP_LC_04_21_S19_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/FR_ND_02_21_S8_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_03_20_S13_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/GZ_MC_13_20_S11_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_04_20_S12_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/PA_XL_07_20_S21_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/PP_CC_04_21_S6_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/TS_DV_03_21_S14_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/VD_CC_01_21_S18_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_02_21_S10_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/aln/VH_MC_04_21_S9_aln_q30_lenfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_aln_q30_lenfilter_complexityfilter_dupfilter.sorted.bam.bai, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_read_counts_and_mismatches.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_01_21_S2_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_05_21_S5_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/AW_RC_10_21_S16_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BB_DV_03_21_S15_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BL_LC_01_21_S4_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BP_LC_01_21_S7_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/BS_MC_01_21_S1_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_08_21_S17_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/CX_GO_13_21_S3_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EN_DV_02_21_S20_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/EP_LC_04_21_S19_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/FR_ND_02_21_S8_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_03_20_S13_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/GZ_MC_13_20_S11_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_04_20_S12_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PA_XL_07_20_S21_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/PP_CC_04_21_S6_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/TS_DV_03_21_S14_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VD_CC_01_21_S18_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_02_21_S10_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/filtering/VH_MC_04_21_S9_all_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_01_21_S2_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_05_21_S5_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_10_21_S16_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BB_DV_03_21_S15_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BL_LC_01_21_S4_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BP_LC_01_21_S7_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BS_MC_01_21_S1_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_08_21_S17_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_13_21_S3_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EN_DV_02_21_S20_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EP_LC_04_21_S19_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/FR_ND_02_21_S8_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_03_20_S13_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_13_20_S11_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_04_20_S12_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_07_20_S21_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PP_CC_04_21_S6_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/TS_DV_03_21_S14_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VD_CC_01_21_S18_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_02_21_S10_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_04_21_S9_filtered_hits_table.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_01_21_S2_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_05_21_S5_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/AW_RC_10_21_S16_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BB_DV_03_21_S15_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BL_LC_01_21_S4_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BP_LC_01_21_S7_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/BS_MC_01_21_S1_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_08_21_S17_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/CX_GO_13_21_S3_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EN_DV_02_21_S20_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/EP_LC_04_21_S19_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/FR_ND_02_21_S8_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_03_20_S13_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/GZ_MC_13_20_S11_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_04_20_S12_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PA_XL_07_20_S21_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/PP_CC_04_21_S6_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/TS_DV_03_21_S14_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VD_CC_01_21_S18_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_02_21_S10_filtered_hits_eukfrac.txt, /projects/p30996/mammoth/metagenomes/eukdetect/VH_MC_04_21_S9_filtered_hits_eukfrac.txt
+    jobid: 0
+
+[Mon Jan 16 16:29:35 2023]
+Finished job 0.
+211 of 211 steps (100%) done
+Complete log: /home/mjs9560/scripts/mammoth-metagenomes/bash/.snakemake/log/2023-01-16T145659.912575.snakemake.log

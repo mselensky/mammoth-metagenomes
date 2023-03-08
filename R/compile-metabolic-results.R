@@ -6,7 +6,7 @@ library(tidyverse)
 
 # input METABOLIC-C directory for Mammoth MAGs
 work.dir = "/projects/p30996/mammoth/metagenomes"
-metabolic.in = file.path(work.dir, "metabolic_c-assemblies")
+metabolic.in = file.path(work.dir, "metabolic_c-refined-mags")
 metadata.path = file.path(work.dir, "data", "MC_field_data.csv")
 sample.key.path = file.path(work.dir, "data", "MC_sample_key.csv")
 MW.score.path = file.path(work.dir, "data", "MW-score_key.txt")
@@ -39,15 +39,27 @@ MWscore_byhmm <- select(MW_key, -Gene, -Substrate, -Product) %>%
 # import each METABOLIC result csv file 
 dat.in.list = list()
 for (i in mag.samples) {
-  dat.in.list[[i]] <- read_tsv(file.path(metabolic.in, i,
-                                         "METABOLIC_result_each_spreadsheet", 
-                                         "METABOLIC_result_worksheet1.tsv"),
-                               col_types = cols()) %>%
-    select(!contains("presence")) %>%
-    select(!contains("Hits")) %>%
-    pivot_longer(cols = 11:ncol(.), names_to = "bin", values_to = "gene_hits") %>%
-    dplyr::mutate(bin = str_remove_all(bin, " Hit numbers"),
-                  `sample-id` = str_remove_all(string = i, pattern = regex("_S[0-9]+$")))
+  
+  if (!i %in% c("z.intermediate_files", "gtdbtk-taxonomy-metadata.csv")){
+    
+    dat.in.list[[i]] <- read_tsv(file.path(metabolic.in, i,
+                                           "METABOLIC_result_each_spreadsheet", 
+                                           "METABOLIC_result_worksheet1.tsv"),
+                                 col_types = cols()) %>%
+      select(!contains("presence")) %>%
+      select(!contains("Hits")) 
+    
+    if (ncol(dat.in.list[[i]]) >= 11 ) {
+      dat.in.list[[i]] <- dat.in.list[[i]] %>%
+        pivot_longer(cols = 11:ncol(.), names_to = "bin", values_to = "gene_hits") %>%
+        dplyr::mutate(bin = str_remove_all(bin, " Hit numbers"),
+                      `sample-id` = str_remove_all(string = i, pattern = regex("_S[0-9]*+$")))
+    }
+    
+  }
+  
+  dat.in.list[[i]]
+  
 }
 
 dat.in <- Reduce(bind_rows, dat.in.list) %>%

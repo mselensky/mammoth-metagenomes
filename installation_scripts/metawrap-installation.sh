@@ -9,6 +9,7 @@ mamba create --prefix /projects/p31618/software/metawrap python=2.7 -y
 source activate /projects/p31618/software/metawrap
 mamba install --only-deps -c ursky metawrap-mg -y
 mamba install blas=2.5=mkl -y 
+mamba install matplotlib -y
 mamba install -c conda-forge biopython -y
 mamba install -c bioconda concoct samtools bwa -y
 
