@@ -1,3 +1,0 @@
-RuleException in line 15 of /projects/p31618/software/EukDetect/rules/eukdetect.rules:
-Conda environments are only allowed with shell, script, notebook, or wrapper directives (not with run).
-  File "/projects/p31618/software/EukDetect/rules/eukdetect.rules", line 15, in <module>
