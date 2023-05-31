@@ -25,7 +25,7 @@ for sample in */; do
 	mv gtdbtk_Genome_files $OUT_DR
 	
 	# move HMM AAs and KEGG outputs too
-	cd ${SAMPLE}
+	cd ${WORK_D}/${SAMPLE}
 	mv Each_HMM_Amino_Acid_Sequence $OUT_DR
 	mv KEGG_identifier_result $OUT_DR
 

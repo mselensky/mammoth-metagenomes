@@ -4,13 +4,13 @@ args = commandArgs(trailingOnly=TRUE)
 
 anvio_bins_dir=args[1] # anvio fasta parent folder
 metagenome=args[2] # name of assembly
-manual_bins=[3] # boolean; true = manual bins to format for post-anvio processing, false = automatic bins to format for anvio
+manual_bins=args[3] # boolean; true = manual bins to format for post-anvio processing, false = automatic bins to format for anvio
 
 message("---------- reformat_autobin_names_for_anvio.R ----------")
 
 message("Start: ", Sys.time(), "\nBin folder: ", anvio_bins_dir,
         "\nReformatting contig names for MAGs automatically binned from assembly: ", metagenome,
-        "\nAutomatic bins supplied: ", manual_bins)
+        "\nManual bins supplied: ", manual_bins)
 
 # anvio contig name keys
 contig.key = read.delim(file.path(anvio_bins_dir, 

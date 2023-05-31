@@ -6,7 +6,7 @@
 #SBATCH -n 4
 #SBATCH --mem-per-cpu=60G
 #SBATCH --array=0-20
-#SBATCH --job-name=metabolic_c-refined-mags
+#SBATCH --job-name=metabolic_c-reassembled-mags
 #SBATCH --output=/home/mjs9560/scripts/slurm-out/mammoth-metagenomes/%j-%x.out
 #SBATCH --mail-user=mselensky@u.northwestern.edu \
 #SBATCH --mail-type=END,FAIL
@@ -20,12 +20,11 @@ source activate /projects/p31618/software/METABOLIC
 MB=/projects/p31618/software/METABOLIC_run_folder/METABOLIC
 
 # define parent directory for MAGs to annotate (each subfolder = 1 sample)
-WORK_DR=/projects/p30996/mammoth/metagenomes/anvio-bins-frmttd2/manual_bins/bin_fastas
-cd $WORK_DR
+WORK_DR=/scratch/mjs9560/anvio-bins-frmttd2-manual_reassembled_bins
 # reads directory
 READS_DR=/projects/p31618/nu-seq/Osburn02_12.10.2021_metagenomes/reads
 # output directory
-MB_OUT=/scratch/mjs9560/metabolic_c-anvio-refined-mags
+MB_OUT=/scratch/mjs9560/metabolic_c-reassembled-mags
 mkdir -p $MB_OUT
 
 # list of samples from which to annotate
@@ -33,7 +32,7 @@ IFS=$'\n' read -d '' -r -a input_args < /home/mjs9560/scripts/mammoth-metagenome
 metagenome=${input_args[$SLURM_ARRAY_TASK_ID]}
 
 OUT_DR=$MB_OUT/${metagenome}
-BIN_DR=$WORK_DR/${metagenome}
+BIN_DR=$WORK_DR/${metagenome}/reassembled_bins
 
 # rename all .fa extensions to .fasta
 cd $BIN_DR
